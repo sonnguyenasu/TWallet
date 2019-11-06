@@ -1,0 +1,10 @@
+{% extends "layout.html" %} {% block title %} Account {% endblock %} {% block
+main %}
+
+<ul>
+  <li>Name: {{ rows[0][1] }}</li>
+  <li>Token: {{ rows[0][3] }}</li>
+  <li>Member From: {{ rows[0][4].date() }}</li>
+  <li><a class="nav-link" href="/pwd">Change Password</a></li>
+</ul>
+{% endblock %}

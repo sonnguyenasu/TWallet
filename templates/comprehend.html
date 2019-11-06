@@ -1,0 +1,13 @@
+{% extends "layout.html" %} {% block tite %} Comprehend {% endblock %} {% block
+main %}
+<form action="/comprehend" method="post">
+  <div class="form-group">
+    <select name="type" id="" class="form-control" style="display:inline;">
+      <option disabled selected value="Search by">Comprehend By</option>
+      <option value="time">Time</option>
+      <option value="category">Category</option>
+    </select>
+  </div>
+  <button class="btn btn-primary" type="submit">Comprehend</button>
+</form>
+{% block form %} {% endblock %} {% endblock %}

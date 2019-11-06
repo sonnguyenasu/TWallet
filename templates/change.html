@@ -1,0 +1,37 @@
+{% extends "layout.html" %} {% block title %} Register {% endblock %} {% block
+main %}
+
+<form action="/pwd" method="post">
+  <div class="form-group">
+    <input
+      autocomplete="off"
+      autofocus=""
+      class="form-control"
+      name="oldpwd"
+      placeholder="Old Password"
+      type="password"
+    />
+  </div>
+  <div class="form-group">
+    <input
+      class="form-control"
+      name="password"
+      placeholder="New Password"
+      type="password"
+    />
+  </div>
+  <div class="form-group">
+    <input
+      class="form-control"
+      name="confirmation"
+      placeholder="New Password (again)"
+      type="password"
+    />
+  </div>
+  <button class="btn btn-primary" type="submit">Change</button>
+</form>
+<ul>
+  <li>{{ cash1 }}</li>
+  <li>{{ cash }}</li>
+</ul>
+{% endblock %}

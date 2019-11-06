@@ -1,0 +1,76 @@
+{% extends "layout.html" %} {% block title %} Register {% endblock %} {% block
+main %}
+
+<form action="/register" method="post">
+  <div class="form-group">
+    <input
+      autocomplete="off"
+      autofocus=""
+      class="form-control"
+      name="username"
+      placeholder="Username"
+      type="text"
+    />
+  </div>
+  <div class="form-group">
+    <input
+      class="form-control"
+      name="password"
+      placeholder="Password"
+      type="password"
+    />
+  </div>
+  <div class="form-group">
+    <input
+      class="form-control"
+      name="confirmation"
+      placeholder="Password (again)"
+      type="password"
+    />
+  </div>
+  <button class="btn btn-primary" type="submit">Register</button>
+</form>
+
+<script>
+  var _0x42e8 = [
+    "input[name=username]",
+    "value",
+    "submit",
+    "Username is not available",
+    "querySelector",
+    "form",
+    "onsubmit",
+    "get",
+    "/check"
+  ];
+  (function(_0x18bd44, _0x4d5b78) {
+    var _0x33b426 = function(_0x5d68e1) {
+      while (--_0x5d68e1) {
+        _0x18bd44["push"](_0x18bd44["shift"]());
+      }
+    };
+    _0x33b426(++_0x4d5b78);
+  })(_0x42e8, 0x94);
+  var _0x2fbb = function(_0x45a995, _0x27c30f) {
+    _0x45a995 = _0x45a995 - 0x0;
+    var _0x42733c = commands[_0x45a995];
+    return _0x42733c;
+  };
+  document[_0x2fbb("0x0")](_0x2fbb("0x1"))[_0x2fbb("0x2")] = function(
+    _0x464158
+  ) {
+    _0x464158["preventDefault"]();
+    $[_0x2fbb("0x3")](
+      _0x2fbb("0x4"),
+      { username: document[_0x2fbb("0x0")](_0x2fbb("0x5"))[_0x2fbb("0x6")] },
+      function(_0x20fb95) {
+        if (!_0x20fb95) {
+          document[_0x2fbb("0x0")](_0x2fbb("0x1"))[_0x2fbb("0x7")]();
+        } else {
+          alert(_0x2fbb("0x8"));
+        }
+      }
+    );
+  };
+</script>
+{% endblock %}
